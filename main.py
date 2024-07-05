@@ -3,6 +3,9 @@ from langgraph.graph import Graph
 from groq import Groq
 from pdfminer.high_level import extract_text
 from json_format import output_map
+from pinecone import Pinecone, ServerlessSpec
+
+
 def extract_text_from_pdf(input):
     try:
         text = extract_text(input[0])
