@@ -1,0 +1,66 @@
+{
+    "fileName": "PFR0717_001 v5.126",
+    "orgName": "CMA CGM",
+    "orderId": "LYK0158261",
+    "ocrBucketName": "N/A",
+    "docType": "Booking Confirmation",
+    "bookingDetails": {
+        "carrierBookingNum": "LYK0158261",
+        "billOfLadingNum": "N/A",
+        "referenceNumber": "S020-80B-22",
+        "carrierName": "CMA CGM",
+        "originServiceMode": "Road",
+        "destinationServiceMode": "Other",
+        "placeOfOrigin": "OSLO",
+        "placeOfDelivery": "ROTTERDAM and BUSAN, KOREA",
+        "portOfLoad": "BREVIK",
+        "portOfDischarge": "ROTTERDAM and BUSAN, KOREA",
+        "temperature": {
+            "unit": "\u00b0C",
+            "value": " unknown"
+        },
+        "humidity": " unknown",
+        "gensetRequired": "N",
+        "travelType": " Oceanic",
+        "containerDetails": {
+            "code": "20'ST",
+            "quantity": 5
+        },
+        "weight": {
+            "unit": "KGM",
+            "value": 120000
+        },
+        "commodityType": "Double salts and mixtures of chemicals",
+        "hazardous": {
+            "hazCode": " unknown",
+            "imoClassType": " unknown",
+            "packageCount": 1,
+            "packageType": " unknown",
+            "packageGroup": " unknown"
+        },
+        "voyageInfo": {
+            "vesselName": "CMA CGM ZHENG HE",
+            "voyageNumber": "0FLD2E1MA",
+            "imoNumber": " unknown",
+            "departureEstimated": "11-OCT-2022 23:00",
+            "arrivalEstimated": "28-NOV-2022 16:30"
+        }
+    },
+    "shipmentDetails": {
+        "shipmentDate": "23-AUG-22",
+        "containerPickUpDate": "28-SEP-22",
+        "railCutOffDate": "10-OCT-2022 10:00",
+        "portCutOffDate": "10-OCT-2022 10:00",
+        "vgmCutoffDate": "10-OCT-2022 10:00",
+        "portOpenDate": "N/A",
+        "siCutOffDate": "10-OCT-2022 10:00",
+        "shipOnBoardDate": "N/A",
+        "vent": "N/A"
+    },
+    "containers": [
+        {
+            "containerId": "QLYK004243",
+            "type": "20'ST"
+        }
+    ]
+}
