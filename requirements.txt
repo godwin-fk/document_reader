@@ -1,5 +1,3 @@
 langgraph
 groq
 pdfminer
-pinecone-client
-sentence_transformers

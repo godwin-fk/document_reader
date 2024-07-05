@@ -22,15 +22,19 @@ pip install -r requirements.txt
 
 ### 4. Create a Groq API Key
 
-### 5. Create Pinecone API KEY
+To use Groq services, you need to create an API key. Follow these steps:
+
+- Go to the Groq API dashboard.
+- Click on "Create New Key".
+- Copy the generated API key.
 
 ### 5. Set up your environment variables
 
-    * Paste them in the main.py where its needed or create a .env file in the root directory.
+    * Paste it in the main.py where its needed or create a .env file in the root directory.
+    * Add the following line: GROQ_API_KEY=your_api_key_here
     * Or you can use my own api_key for this project.(main.py)
 
 ### 6. Running the project
 
 Execute:
-
-- python main.py
+python main.py
