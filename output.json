@@ -1,0 +1,52 @@
+{
+  "fileName": "PFR0717_001",
+  "orgName": "CMA CGM",
+  "orderId": "N/A",
+  "ocrBucketName": "N/A",
+  "docType": "Booking Confirmation",
+  "bookingDetails": {
+    "carrierBookingNum": "LYK0158261",
+    "billOfLadingNum": "N/A",
+    "referenceNumber": "S020-80B-22",
+    "carrierName": "CMA CGM",
+    "originServiceMode": "N/A",
+    "destinationServiceMode": "N/A",
+    "placeOfOrigin": "OSLO",
+    "placeOfDelivery": "ROTTERDAM, BUSAN, KOREA",
+    "portOfLoad": "BREVIK",
+    "portOfDischarge": "ROTTERDAM",
+    "temperature": { "unit": "N/A", "value": "N/A" },
+    "humidity": "N/A",
+    "gensetRequired": "N/A",
+    "travelType": "N/A",
+    "containerDetails": { "code": "N/A", "quantity": "5 x 20'ST" },
+    "weight": { "unit": "KGM", "value": "120000" },
+    "commodityType": "Double salts and mixtures of c",
+    "hazardous": {
+      "hazCode": "N/A",
+      "imoClassType": "N/A",
+      "packageCount": "N/A",
+      "packageType": "N/A",
+      "packageGroup": "N/A"
+    },
+    "voyageInfo": {
+      "vesselName": "CMA CGM ZHENG HE",
+      "voyageNumber": "0FLD2E1MA",
+      "imoNumber": "N/A",
+      "departureEstimated": "11-OCT-2022 23:00",
+      "arrivalEstimated": "14-OCT-2022 10:00"
+    }
+  },
+  "shipmentDetails": {
+    "shipmentDate": "23-AUG-22",
+    "containerPickUpDate": "N/A",
+    "railCutOffDate": "10-OCT-2022 10:00",
+    "portCutOffDate": "10-OCT-2022 14:00",
+    "vgmCutoffDate": "10-OCT-2022 10:00",
+    "portOpenDate": "N/A",
+    "siCutOffDate": "10-OCT-2022 10:00",
+    "shipOnBoardDate": "N/A",
+    "vent": "N/A"
+  },
+  "containers": [{ "containerId": "QLYK004243", "type": "N/A" }]
+}
