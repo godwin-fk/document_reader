@@ -4,6 +4,7 @@ from groq import Groq
 from pdfminer.high_level import extract_text
 from json_format import output_map
 from pinecone import Pinecone, ServerlessSpec
+from sentence_transformers import SentenceTransformer
 
 
 def extract_text_from_pdf(input):
@@ -42,8 +43,39 @@ result = flow.invoke((pdf_path, output_map))
 
 json_data = str(re.search(r'{.*}', result, re.DOTALL).group())
 data = json.loads(f'''{json_data}''')
-print(data)
-output_path = 'output2.json'
+
+output_path = 'output3.json'
+
+
 with open(output_path, 'w') as f:
     json.dump(data, f, indent=4)
 print(json_data)
+
+#Code to save the data to Pinecone
+pc = Pinecone(api_key="680b0733-5961-41ff-8d25-c620ab8742ad")
+
+index_name = "read-documents"
+if index_name not in pc.list_indexes():
+   pc.create_index(
+    name=index_name,
+    dimension=384, 
+    metric="euclidean", 
+    spec=ServerlessSpec(
+        cloud="aws",
+        region="us-east-1"
+    ) 
+)
+# Connect to the index
+index = pc.Index(index_name)
+
+#sentence transformer model
+model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+
+data_str = json.dumps(data)
+
+# Encode the string into a vector
+vector = model.encode(data_str).tolist()
+title = data.get("fileName", "NA")
+
+metadata = {"original_data": data_str}  # Metadata to store the original JSON data
+index.upsert([(title, vector, metadata)])
